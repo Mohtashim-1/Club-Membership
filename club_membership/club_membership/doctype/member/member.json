@@ -1,0 +1,198 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-09-29 12:11:58.675138",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "autoname": "format:MEM-.YYYY.-.####",
+ "field_order": [
+  "member_id",
+  "status",
+  "membership_plan",
+  "join_date",
+  "termination_date",
+  "full_name",
+  "photo",
+  "email",
+  "mobile_no",
+  "billing_address",
+  "shipping_address",
+  "credit_limit",
+  "charge_privileges",
+  "reciprocity_allowed",
+  "blacklist",
+  "interests",
+  "family",
+  "communications",
+  "min_spend_period",
+  "min_spend_required",
+  "min_spend_consumed",
+  "min_spend_reset_on",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "member_id",
+   "fieldtype": "Data",
+   "label": "Member ID",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Prospect\nActive\nSuspended\nTerminated\nDeceased",
+   "reqd": 1
+  },
+  {
+   "fieldname": "membership_plan",
+   "fieldtype": "Link",
+   "label": "Membership Plan",
+   "options": "Membership Plan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "join_date",
+   "fieldtype": "Date",
+   "label": "Join Date"
+  },
+  {
+   "fieldname": "termination_date",
+   "fieldtype": "Date",
+   "label": "Termination Date"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "billing_address",
+   "fieldtype": "Link",
+   "label": "Billing Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "shipping_address",
+   "fieldtype": "Link",
+   "label": "Shipping Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "credit_limit",
+   "fieldtype": "Currency",
+   "label": "Credit Limit"
+  },
+  {
+   "fieldname": "charge_privileges",
+   "fieldtype": "Check",
+   "label": "Charge Privileges",
+   "default": "1"
+  },
+  {
+   "fieldname": "reciprocity_allowed",
+   "fieldtype": "Check",
+   "label": "Reciprocity Allowed"
+  },
+  {
+   "fieldname": "blacklist",
+   "fieldtype": "Check",
+   "label": "Blacklist"
+  },
+  {
+   "fieldname": "interests",
+   "fieldtype": "Table",
+   "label": "Interests",
+   "options": "Member Interest"
+  },
+  {
+   "fieldname": "family",
+   "fieldtype": "Table",
+   "label": "Family",
+   "options": "Family Member"
+  },
+  {
+   "fieldname": "communications",
+   "fieldtype": "Table",
+   "label": "Communications",
+   "options": "Communication Log"
+  },
+  {
+   "fieldname": "min_spend_period",
+   "fieldtype": "Select",
+   "label": "Minimum Spend Period",
+   "options": "Monthly\nQuarterly\nAnnual"
+  },
+  {
+   "fieldname": "min_spend_required",
+   "fieldtype": "Currency",
+   "label": "Minimum Spend Required"
+  },
+  {
+   "fieldname": "min_spend_consumed",
+   "fieldtype": "Currency",
+   "label": "Minimum Spend Consumed",
+   "read_only": 1
+  },
+  {
+   "fieldname": "min_spend_reset_on",
+   "fieldtype": "Date",
+   "label": "Minimum Spend Reset On"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Member",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-09-29 12:12:20.329503",
+ "modified_by": "Administrator",
+ "module": "Club Membership",
+ "name": "Member",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
