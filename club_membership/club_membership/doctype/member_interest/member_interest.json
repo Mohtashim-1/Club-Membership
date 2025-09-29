@@ -12,12 +12,16 @@
   {
    "fieldname": "interest",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Interest",
    "reqd": 1
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Amended From",
    "no_copy": 1,
    "options": "Member Interest",
@@ -30,7 +34,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-09-29 12:12:51.340882",
+ "modified": "2025-09-29 13:04:16.767507",
  "modified_by": "Administrator",
  "module": "Club Membership",
  "name": "Member Interest",

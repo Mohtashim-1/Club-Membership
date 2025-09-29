@@ -1,18 +1,18 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:MEM-{YYYY}-{###}",
  "creation": "2025-09-29 12:11:58.675138",
  "doctype": "DocType",
  "engine": "InnoDB",
- "autoname": "format:MEM-.YYYY.-.####",
  "field_order": [
-  "member_id",
   "status",
   "membership_plan",
   "join_date",
   "termination_date",
   "full_name",
   "photo",
+  "column_break_jsvq",
   "email",
   "mobile_no",
   "billing_address",
@@ -21,26 +21,25 @@
   "charge_privileges",
   "reciprocity_allowed",
   "blacklist",
-  "interests",
-  "family",
+  "section_break_aizm",
   "communications",
-  "min_spend_period",
+  "section_break_muhs",
+  "interests",
+  "section_break_ziue",
+  "family",
+  "section_break_juhm",
   "min_spend_required",
-  "min_spend_consumed",
   "min_spend_reset_on",
-  "amended_from"
+  "min_spend_period",
+  "column_break_ubpi",
+  "amended_from",
+  "min_spend_consumed"
  ],
  "fields": [
   {
-   "fieldname": "member_id",
-   "fieldtype": "Data",
-   "label": "Member ID",
-   "read_only": 1,
-   "reqd": 1
-  },
-  {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "Prospect\nActive\nSuspended\nTerminated\nDeceased",
    "reqd": 1
@@ -48,6 +47,7 @@
   {
    "fieldname": "membership_plan",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Membership Plan",
    "options": "Membership Plan",
    "reqd": 1
@@ -65,6 +65,7 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Full Name",
    "reqd": 1
   },
@@ -101,17 +102,19 @@
    "label": "Credit Limit"
   },
   {
+   "default": "1",
    "fieldname": "charge_privileges",
    "fieldtype": "Check",
-   "label": "Charge Privileges",
-   "default": "1"
+   "label": "Charge Privileges"
   },
   {
+   "default": "0",
    "fieldname": "reciprocity_allowed",
    "fieldtype": "Check",
    "label": "Reciprocity Allowed"
   },
   {
+   "default": "0",
    "fieldname": "blacklist",
    "fieldtype": "Check",
    "label": "Blacklist"
@@ -165,16 +168,41 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "column_break_jsvq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_aizm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_muhs",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_ziue",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_juhm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ubpi",
+   "fieldtype": "Column Break"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-09-29 12:12:20.329503",
+ "modified": "2025-09-29 13:03:35.002209",
  "modified_by": "Administrator",
  "module": "Club Membership",
  "name": "Member",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
